@@ -15,8 +15,8 @@ function Home() {
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text variant="h2">AI Chat Bot:</Text>
-        <div className="lg:w-2/3"> {/*fix sizing*/}
+        <Text className="text-center"variant="h2">AI Chat Bot:</Text>
+        <div className="flex self-center lg:w-2/3"> {/*fix sizing*/}
           <Chat />
         </div>
       </section>

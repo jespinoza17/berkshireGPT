@@ -79,8 +79,6 @@ export function Chat() {
       }),
     })
 
-    console.log('Edge function returned.')
-
     if (!response.ok) {
       throw new Error(response.statusText)
     }
