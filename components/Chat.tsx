@@ -9,7 +9,7 @@ const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
 export const initialMessages: ChatGPTMessage[] = [
   {
     role: 'assistant',
-    content: 'Hi! I am a friendly AI assistant. Ask me anything!',
+    content: 'Hi! I am the greatest investor of all time! Ask me anything!',
   },
 ]
 
@@ -33,13 +33,13 @@ const InputMessage = ({ input, setInput, sendMessage }: any) => (
     />
     <Button
       type="submit"
-      className="ml-4 flex-none"
+      className="ml-4 flex-none color-blue-900"
       onClick={() => {
         sendMessage(input)
         setInput('')
       }}
     >
-      Say
+      Chat
     </Button>
   </div>
 )

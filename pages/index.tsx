@@ -7,16 +7,20 @@ function Home() {
   return (
     <Page className="flex flex-col gap-12 text-blue-900 font-serif items-center mx-px">
       <section className="flex flex-col gap-6 w-full items-center">
-        <Text variant="h1" className="text-blue-900">BerkshireGPT</Text>
-        <Text className="text-zinc-600 text-black">
-          Chat with an AI trained on Berkshire Hathaway shareholder letters.
-        </Text>
+        <div>
+          <Text variant="h1" className="text-blue-900 my-0"><a href="https://www.berkshirehathaway.com/">BerkshireGPT</a></Text>
+          <div className="my-0 text-center font-bold">
+            355 Farnam Street <br />
+            Omaha, NE 68131 <br />
+            Official Home Page
+          </div>
+        </div>
         <hr className="border" style={{borderStyle: 'inset', width: '98%'}}/>
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text className="text-center"variant="h2">AI Chat Bot:</Text>
-        <div className="flex self-center lg:w-2/3"> {/*fix sizing*/}
+        <Text className="text-center"variant="h2">Oracle of Omaha:</Text>
+        <div className="flex self-center lg:w-2/3 text-fuchsia-800"> {/*fix sizing*/}
           <Chat />
         </div>
       </section>

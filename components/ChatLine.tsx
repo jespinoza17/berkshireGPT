@@ -17,7 +17,7 @@ export const LoadingChatLine = () => (
     <div className="flex flex-grow space-x-3">
       <div className="min-w-0 flex-1">
         <p className="font-large text-xxl text-gray-900">
-          <a href="#" className="hover:underline">
+          <a href="https://www.berkshirehathaway.com/" className="hover:underline">
             Berkshire
           </a>
         </p>
@@ -59,7 +59,7 @@ export function ChatLine({ role = 'assistant', content }: ChatGPTMessage) {
           <div className="flex space-x-3">
             <div className="flex-1 gap-4">
               <p className="font-large text-xxl text-gray-900">
-                <a href="#" className="hover:underline">
+                <a href="https://www.berkshirehathaway.com/" className="hover:underline">
                   {role == 'assistant' ? 'Berkshire' : 'You'}
                 </a>
               </p>
