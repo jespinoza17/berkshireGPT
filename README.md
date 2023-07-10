@@ -2,7 +2,7 @@
 
 BerkshireGPT a simple chat bot using Next.js, API Routes, and [OpenAI ChatGPT API](https://beta.openai.com/docs/api-reference/completions/create).
 
-![Screenshot](public/berkshire-screenshot.png)
+![Screenshot](public/screenshot.png)
 
 ### Components
 
