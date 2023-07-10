@@ -1,6 +1,8 @@
-# AI Chat GPT-3 example
+# BerkshireGPT
 
-This example shows how to implement a simple chat bot using Next.js, API Routes, and [OpenAI ChatGPT API](https://beta.openai.com/docs/api-reference/completions/create).
+BerkshireGPT a simple chat bot using Next.js, API Routes, and [OpenAI ChatGPT API](https://beta.openai.com/docs/api-reference/completions/create).
+
+![Screenshot](public/berkshire-screenshot.png)
 
 ### Components
 
