@@ -8,7 +8,7 @@ import mixpanel from 'mixpanel-browser';
 
 import '@vercel/examples-ui/globals.css'
 
-mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN ?? '', { debug: true, track_pageview: true, persistence: 'localStorage'});
+mixpanel.init(process.env.NEXT_PUBLIC_MIXPANEL_TOKEN ?? '', { track_pageview: true, persistence: 'localStorage'});
 
 function App({ Component, pageProps }: AppProps) {
   // const Layout = getLayout<LayoutProps>(Component)
