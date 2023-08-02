@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Button } from './Button'
 import { type ChatGPTMessage, ChatLine, LoadingChatLine } from './ChatLine'
 import { useCookies } from 'react-cookie'
+import mixpanel from 'mixpanel-browser';
 
 const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
 
@@ -24,6 +25,7 @@ const InputMessage = ({ input, setInput, sendMessage }: any) => (
       onKeyDown={(e) => {
         if (e.key === 'Enter') {
           sendMessage(input)
+          mixpanel.track('Prompt', { prompt: input });
           setInput('')
         }
       }}
@@ -36,6 +38,7 @@ const InputMessage = ({ input, setInput, sendMessage }: any) => (
       className="ml-4 flex-none color-blue-900"
       onClick={() => {
         sendMessage(input)
+        mixpanel.track('Prompt', { prompt: input });
         setInput('')
       }}
     >
